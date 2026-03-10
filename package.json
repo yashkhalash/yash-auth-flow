@@ -1,0 +1,86 @@
+{
+  "name": "yash-auth-flow",
+  "version": "1.0.15",
+  "description": "Production-ready multi-account authentication library (Auth Forge) for Node.js, Express, Prisma, and PostgreSQL. Secure JWT auth, OTP, and dynamic email verification flow.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "prisma",
+    "assets"
+  ],
+  "scripts": {
+    "build": "npx tsc",
+    "prepublishOnly": "npm run build",
+    "start": "node dist/app.js",
+    "dev": "nodemon --watch .env --exec ts-node src/app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "auth",
+    "authentication",
+    "prisma",
+    "jwt",
+    "multi-account",
+    "otp",
+    "node",
+    "express",
+    "security",
+    "auth-forge",
+    "backend",
+    "rest-api",
+    "user-management",
+    "access-token",
+    "refresh-token",
+    "session-management",
+    "signup-logic",
+    "login-logic",
+    "rbac",
+    "secure-auth",
+    "auth-library"
+  ],
+  "author": "Yash",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yashkhalash/yash-auth-flow"
+  },
+  "homepage": "https://github.com/yashkhalash/yash-auth-flow#readme",
+  "bugs": {
+    "url": "https://github.com/yashkhalash/yash-auth-flow/issues"
+  },
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@prisma/adapter-pg": "^7.4.2",
+    "@prisma/client": "^5.x",
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.3.0",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.3",
+    "multer": "^2.1.1",
+    "nodemailer": "^8.0.1",
+    "pg": "^8.20.0",
+    "ua-parser-js": "^2.0.9",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/cookie-parser": "^1.4.10",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/multer": "^2.1.0",
+    "@types/node": "^25.3.5",
+    "@types/nodemailer": "^7.0.11",
+    "@types/pg": "^8.18.0",
+    "@types/ua-parser-js": "^0.7.39",
+    "@types/uuid": "^10.0.0",
+    "nodemon": "^3.1.14",
+    "prisma": "^5.x",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.3"
+  }
+}

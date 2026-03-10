@@ -1,0 +1,25 @@
+# Source code and development files
+src/
+tsconfig.json
+nodemon.json
+.env
+.gitignore
+verify-null.ts
+check-db.ts
+
+# Tests
+tests/
+
+node_modules
+.env
+.git
+.gitignore
+tests
+coverage
+logs
+*.log
+
+assets
+prisma/migrations
+*.log
+tests
